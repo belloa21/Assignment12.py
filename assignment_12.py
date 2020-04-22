@@ -59,3 +59,35 @@ while menu != 11:
             print("True, which means your string has a digit in it!")
         else:
             print("False, which means your string has no digits in it.")
+
+    if menu == 5:
+        print("Time to check for a '.' in your string.")
+        find = re.findall(r'\.', user_string)
+        if find:
+            print("True, which means your string has a '.' in it.")
+        else:
+            print("False, which means your string doesn't have a '.' in it.")
+
+    if menu == 6:
+        print("Time to check if your string has two consecutive vowels in it.")
+        find = re.findall(r'\w*[aeiou][aeiou]\w*', user_string)
+        if find:
+            print("True, which means your string has repeating vowels in it!")
+        else:
+            print("False, which means your string doesn't have repeating vowels in it.")
+
+    if menu == 7:
+        print("Time to check if your string has any white space in it.")
+        find = re.findall(r'\s', user_string)
+        if find:
+            print("True, which means your string does have white space in it!")
+        else:
+            print("False, which means your string doesn't have any white space in it.")
+
+    if menu == 8:
+        print("Time to check if your string has any words with triple repeating letters in it.")
+        find = re.findall(r'', user_string)
+        if find:
+            print("True, which means that your string has a word that has three letters repeating in it!")
+        else:
+            print("False, which means your string doesn't have a word that has three letters repeating in it.")
