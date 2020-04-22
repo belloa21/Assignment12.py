@@ -86,8 +86,24 @@ while menu != 11:
 
     if menu == 8:
         print("Time to check if your string has any words with triple repeating letters in it.")
-        find = re.findall(r'', user_string)
+        find = re.findall(r'\w{3}\w{3}', user_string)
         if find:
             print("True, which means that your string has a word that has three letters repeating in it!")
         else:
             print("False, which means your string doesn't have a word that has three letters repeating in it.")
+
+    if menu == 9:
+        print("Time to check if your string starts with 'Hello' with an upper case H.")
+        find = re.findall(r'^Hello', user_string)
+        if find:
+            print("True, which means your string starts with Hello with an upper case 'H'!")
+        else:
+            print("False, which means your string doesn't start with Hello with a upper case 'H'.")
+
+    if menu == 10:
+        print("Time to check if your string has an email address in it.")
+        find = re.findall(r'\w+@\w+\.\w+', user_string)
+        if find:
+            print("True, which means your string contains an email address!")
+        else:
+            print("False, which means your string doesn't contain an email address.")
