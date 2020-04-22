@@ -3,7 +3,8 @@
 # Regular Expression Tests
 
 print("Hey, can you please write a string for me?")
-input()
+user_string = input()
+print(user_string)
 print("Thanks, now let's run some tests on the string.")
 
 menu = 0
@@ -22,6 +23,9 @@ while menu != 11:
     print("8. Test if your string has any letters that repeat three times in a single word.")
     print("9. Test if your string starts with the word 'Hello' case sensitive.")
     print("10. Test if your string has an email address in it.")
+    print("11. Exit the testing menu.")
     menu = int(input(">"))
+
+    if menu == 1:
 
 
