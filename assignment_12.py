@@ -2,6 +2,8 @@
 # 4/23/2020
 # Regular Expression Tests
 
+import re
+
 print("Hey, can you please write a string for me?")
 user_string = input()
 print(user_string)
@@ -27,5 +29,11 @@ while menu != 11:
     menu = int(input(">"))
 
     if menu == 1:
+        print("Time to check for a 'q'.")
+        find = re.findall(r'[q]', user_string)
+        if find:
+            print("True, which means your string does have a 'q' in it!")
+        else:
+            print("False, which means your string doesn't have a 'q' in it.")
 
 
