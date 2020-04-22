@@ -44,4 +44,18 @@ while menu != 11:
         else:
             print("False, which means your string doesn't have 'the' in it.")
 
+    if menu == 3:
+        print("Time to check for a '*' in the string.")
+        find = re.findall(r'\W[*]', user_string)
+        if find:
+            print("True, which means your string has a '*' in it.")
+        else:
+            print("False, which means your string doesn't have a '*' in it.")
 
+    if menu == 4:
+        print("Time to check for any digits in your string.")
+        find = re.findall(r'\d', user_string)
+        if find:
+            print("True, which means your string has a digit in it!")
+        else:
+            print("False, which means your string has no digits in it.")
