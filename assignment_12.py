@@ -36,4 +36,12 @@ while menu != 11:
         else:
             print("False, which means your string doesn't have a 'q' in it.")
 
+    if menu == 2:
+        print("Time to check if 'the' is in the string.")
+        find = re.findall(r'^(the)', user_string)
+        if find:
+            print("True, which means your string has 'the' in it!")
+        else:
+            print("False, which means your string doesn't have 'the' in it.")
+
 
